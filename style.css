@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -76,6 +77,11 @@ html {
     height: 64px;
     padding-left: 100px;
 
+}
+
+.nav-links {
+    display: flex;
+    gap: 64px;
 }
 
 .phone-button {
@@ -279,34 +285,151 @@ html {
     height: 44px;
 }
 
-@media(max-width: 920px) {
-    .hide-mobile {
+.footer-logo .mobile-logo {
+    display: none;
+}
+
+@media(min-width: 768px) and (max-width: 1280px) {
+    .nav-links {
         display: none;
     }
 
+    .nav-container a {
+        font-size: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 72px;
+    }
+
+    .hero-text p {
+        font-size: 20px;
+    }
+
+    .how-to-order h2 {
+        font-size: 64px;
+    }
+
+    .order-steps .step img {
+        width: 112px;
+        margin-bottom: 8px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    .our-menu-section h2 {
+        padding-top: 96px;
+        padding-bottom: 48px;
+        color: #9F0908;
+        font-size: 64px;
+    }
+
+    table td {
+        font-size: 24px;
+    }
+
+    .menu-item {
+        gap: 24px;
+    }
+
+    .find-us-at h2 {
+        font-size: 64px;
+    }
+
+    .find-us-at p {
+        font-size: 20px;
+    }
+
+}
+
+
+@media(min-width: 320px) and (max-width: 767px) {
+    .nav-links {
+        display: none;
+    }
+
+    .sakura-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-container a {
+        font-size: 16px;
+    }
+
+    .hero-text h1 {
+        font-size: 44px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .how-to-order h2 {
+        font-size: 40px;
+    }
+
     .order-steps {
-        align-items: center;
         flex-direction: column;
+        gap: 32px;
+        align-items: center;
     }
 
     .step {
-        padding: 16px;
+        gap: 8px;
+    }
+
+    .our-menu-section h2 {
+        padding-top: 72px;
+        padding-bottom: 40px;
+        color: #9F0908;
+        font-size: 40px;
+    }
+
+    .menu-item img {
+        width: 343px;
+        height: 343px;
+        object-fit: cover;
 
     }
 
     .menu-item {
         flex-direction: column;
+        gap: 16px;
     }
 
-    .social-logos {
+    .menu-items {
+        gap: 32px;
+        padding-bottom: 72px;
+    }
+
+    .find-us-at h2 {
+        font-size: 40px;
+    }
+
+    .find-us-at p {
+        font-size: 16px;
+    }
+
+    .footer {
+        height: 86px;
+    }
+
+    .footer-logo .desktop-logo {
         display: none;
     }
 
-}
-
-@media(max-width: 800px) {
-    .hero-text h1 {
-        font-size: 48px;
+    .footer-logo .mobile-logo {
+        display: block;
+        height: 40px;
     }
-}
 
+    .footer-logo {
+        padding-left: 24px;
+    }
+
+
+
+}
