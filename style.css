@@ -30,12 +30,14 @@ p {
     font-size: 24px;
 }
 
+
 table td {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 32px;
     color: #675E54;
-    padding: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 table th {
@@ -189,33 +191,34 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .our-menu-section h2 {
-    padding-top: 120px;
-    padding-bottom: 64px;
     color: #9F0908;
+    margin-bottom: 64px;
 }
 
 
 .menu-items {
     display: flex;
     flex-direction: column;
-    padding-bottom: 120px;
     gap: 56px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+    width: 100%;
 }
 
 .menu-item {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 80px;
-    justify-content: space-between;
-    background-color: none;
-
 }
 
 .spicy-miso {
-    display: flex;
     flex-direction: row-reverse;
 }
 
@@ -223,7 +226,42 @@ html {
     width: 352px;
     height: 352px;
     object-fit: cover;
+}
 
+.menu-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 16px;   
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+table th {
+    text-align: left;
+    padding-bottom: 16px;
+}
+
+table td {
+    font-size: 24px;
+    color: #675E54;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+table td:first-child {
+    text-align: left;
+}
+
+table td:last-child {
+    text-align: right;
+}
+
+table th {
+    padding-bottom: 16px;
 }
 
 .find-us-at {
@@ -294,6 +332,10 @@ html {
         display: none;
     }
 
+    .nav-container {
+        padding-right: 32px;
+    }
+
     .nav-container a {
         font-size: 20px;
     }
@@ -354,6 +396,10 @@ html {
         display: none;
     }
 
+    .nav-container {
+        padding-right: 24px;
+    }
+
     .sakura-logo {
         width: 40px;
         height: 40px;
@@ -365,15 +411,30 @@ html {
     }
 
     .hero-text h1 {
-        font-size: 44px;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        margin-block-end: 0;
     }
 
     .hero-text p {
         font-size: 16px;
     }
 
+    .how-to-order {
+        padding: 72px 0px 72px 0px;
+    }
+
     .how-to-order h2 {
-        font-size: 40px;
+        font-size: 36px;
+    }
+
+    .order-steps .step img {
+        width: 112px;
+    }
+
+    h3 {
+        font-size: 24px;
     }
 
     .order-steps {
@@ -394,15 +455,20 @@ html {
     }
 
     .menu-item img {
-        width: 343px;
-        height: 343px;
+        width: 305px;
+        height: 305px;
         object-fit: cover;
 
+    }
+
+    table td {
+        font-size: 16px;
     }
 
     .menu-item {
         flex-direction: column;
         gap: 16px;
+        flex-wrap: wrap;
     }
 
     .menu-items {
