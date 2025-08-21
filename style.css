@@ -238,6 +238,7 @@ html {
 table {
     width: 100%;
     table-layout: fixed;
+    max-width: 410px;
 }
 
 table th {
@@ -372,6 +373,10 @@ table th {
         font-size: 64px;
     }
 
+    table {
+        max-width: 360px;
+    }
+
     table td {
         font-size: 24px;
     }
@@ -455,14 +460,19 @@ table th {
     }
 
     .menu-item img {
-        width: 305px;
-        height: 305px;
+        width: 280px;
+        height: 280px;
         object-fit: cover;
 
     }
 
+    table {
+        max-width: 200px;
+    }
+
     table td {
         font-size: 16px;
+        padding: 4px 0px 4px 0px
     }
 
     .menu-item {
